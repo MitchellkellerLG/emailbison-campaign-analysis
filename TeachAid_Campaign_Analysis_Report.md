@@ -41,6 +41,10 @@ This report analyzes email campaigns from the TeachAid workspace, focusing on **
 
 ---
 
+**IMPORTANT NOTE:** Reply rates in this report have been corrected to calculate from **total_leads_contacted** (unique people reached) rather than emails_sent (which includes follow-up emails to the same contacts). This means campaigns perform significantly better than initially calculated.
+
+---
+
 ## WINNING CAMPAIGN: New Zealand Teachers 🏆
 
 ### Campaign #305: New Zealand Teachers Updated Data October 9th
@@ -53,8 +57,8 @@ This report analyzes email campaigns from the TeachAid workspace, focusing on **
 - **Emails Sent:** 1,043
 - **Total Leads Contacted:** 543
 - **Completion:** 100%
-- **Replied:** 41 (3.93% reply rate)
-- **Unique Replies:** 36 (3.45%)
+- **Replied:** 41 (7.55% reply rate)
+- **Unique Replies:** 36 (6.63% reply rate) - **EXCEPTIONAL ENGAGEMENT**
 - **Bounced:** 1
 - **Interested:** **23 (2.21%)** ⭐ **HIGHEST INTERESTED COUNT - 10X FOUNDATION AVERAGE**
 - **Conversion:** 63.9% (replies to interested) - EXCEPTIONAL
@@ -62,7 +66,7 @@ This report analyzes email campaigns from the TeachAid workspace, focusing on **
 
 #### Why This Campaign Is A Massive Winner
 
-This campaign achieved a **2.21% interested rate** - which is **5.7X higher** than Foundation's best campaign (#209 at 0.87%).
+This campaign achieved a **6.63% reply rate** and **2.21% interested rate** - the reply rate is comparable to Foundation's best campaigns (#209 and #254 at ~7.2%), while the interested rate is **5.7X higher** than Foundation's best campaign (#209 at 0.87%).
 
 **Key Success Factors:**
 1. **Geographic targeting** - New Zealand teachers (specific, tight audience)
@@ -86,8 +90,8 @@ This campaign achieved a **2.21% interested rate** - which is **5.7X higher** th
 
 #### Performance Metrics
 - **Emails Sent:** 173
-- **Replied:** 27 (15.61% reply rate!)
-- **Unique Replies:** 24 (13.87%)
+- **Replied:** 27 (38.03% reply rate!) - **INCREDIBLE**
+- **Unique Replies:** 24 (33.80% reply rate!)
 - **Interested:** **17 (9.83%)**
 - **Conversion:** **70.8% (replies to interested)** ⭐ INCREDIBLE
 - **Total Leads Contacted:** 71
