@@ -19,7 +19,7 @@ This report analyzes email campaigns from the Foundation workspace, focusing on 
 - **Total Unique Replies:** 533 unique replies (broader engagement measure)
 - **Total Interested Leads:** 122 interested leads (qualified high-intent subset)
 - **Total Leads Contacted:** 11,982 leads
-- **Overall Reply Rate:** 2.02% (unique replies / emails sent)
+- **Overall Reply Rate:** 4.45% (533 unique replies / 11,982 contacts)
 - **Overall Interested Rate:** 0.39% (interested / emails sent)
 - **Engagement Conversion:** 22.9% of repliers become interested (122/533)
 
@@ -43,15 +43,15 @@ Several campaigns generated significant reply volume even if not all replies con
 
 ### Top 5 Campaigns by Total Engagement (Unique Replies)
 
-| Rank | Campaign Name | ID | Emails Sent | Unique Replies | Interested | Reply Rate | Interested Rate | Conversion |
-|------|---------------|-----|-------------|----------------|-----------|-----------|----------------|------------|
-| 1 | Evergreen SEO Engagers | 209 | 4,379 | 113 | 38 | 2.58% | 0.87% | 33.6% |
-| 2 | CB Funded Companies - Re-Run | 254 | 2,573 | 64 | 6 | 2.49% | 0.23% | 9.4% |
-| 3 | New Marketing Hires - Reddit List | 318 | 2,378 | 46 | 3 | 1.93% | 0.13% | 6.5% |
-| 4 | New - Reddit List (Re-Run) | 296 | 2,455 | 41 | 6 | 1.67% | 0.24% | 14.6% |
-| 5 | Leads On Trees Recently Funded | 328 | 3,532 | 40 | 3 | 1.13% | 0.08% | 7.5% |
+| Rank | Campaign Name | ID | Contacts | Unique Replies | Interested | Reply Rate | Interested Rate | Conversion |
+|------|---------------|-----|----------|----------------|-----------|-----------|----------------|------------|
+| 1 | CB Funded Companies - Re-Run | 254 | 893 | 64 | 6 | 7.17% | 0.67% | 9.4% |
+| 2 | Evergreen SEO Engagers | 209 | 1,571 | 113 | 38 | 7.19% | 2.42% | 33.6% |
+| 3 | New - Reddit List (Re-Run) | 296 | 846 | 41 | 6 | 4.85% | 0.71% | 14.6% |
+| 4 | New Marketing Hires - Reddit List | 318 | 990 | 46 | 3 | 4.65% | 0.30% | 6.5% |
+| 5 | Leads On Trees Recently Funded | 328 | 1,444 | 40 | 3 | 2.77% | 0.21% | 7.5% |
 
-**Key Finding:** Campaign #209 (SEO Engagers) dominates in both metrics - **113 unique replies AND 38 interested leads**. This suggests the highest quality audience targeting. Campaign #254 generated 64 replies but only 6 interested (9.4% conversion), indicating high curiosity but lower qualification.
+**CRITICAL CORRECTION:** Reply rates calculated from **contacts** (not emails sent). Campaigns #254 and #209 both achieve **~7.2% reply rate** - exceptional performance! Campaign #209 dominates in interested conversion (33.6%) while #254 shows high curiosity but lower qualification (9.4%).
 
 ---
 
@@ -67,8 +67,8 @@ Several campaigns generated significant reply volume even if not all replies con
 - **Emails Sent:** 4,379
 - **Total Leads Contacted:** 1,571
 - **Completion:** 58.87%
-- **Replied:** 151 (3.45% reply rate)
-- **Unique Replies:** 113 (2.58%)
+- **Replied:** 151 (9.61% reply rate)
+- **Unique Replies:** 113 (7.19% reply rate) - **HIGHEST REPLY RATE (tied with #254)**
 - **Bounced:** 33
 - **Interested:** **38 (0.87%)** ⭐ **HIGHEST INTERESTED COUNT**
 - **Unsubscribed:** 1
@@ -132,8 +132,8 @@ My audit will {tell you exactly what Reddit's potential is|show the exact growth
 - **Emails Sent:** 12,249
 - **Total Leads Contacted:** 4,560
 - **Completion:** 31.12%
-- **Replied:** 120 (0.98% reply rate)
-- **Unique Replies:** 98 (0.80%)
+- **Replied:** 120 (2.63% reply rate)
+- **Unique Replies:** 98 (2.15% reply rate)
 - **Bounced:** 79
 - **Interested:** **17 (0.14%)**
 - **Total Leads:** 13,212
@@ -217,8 +217,8 @@ Is there someone else that might want to see it on the team?
 - **Emails Sent:** 1,921
 - **Total Leads Contacted:** 664
 - **Completion:** 99.48%
-- **Replied:** 29 (1.51% reply rate)
-- **Unique Replies:** 24 (1.25%)
+- **Replied:** 29 (4.37% reply rate)
+- **Unique Replies:** 24 (3.61% reply rate)
 - **Bounced:** 6
 - **Interested:** **16 (0.83%)** ⭐ **3RD HIGHEST INTERESTED COUNT**
 - **Total Leads:** 667
@@ -276,8 +276,8 @@ Campaign #202 follows the proven agency whitelabel formula from Campaign #221 bu
 - **Emails Sent:** 4,421
 - **Total Leads Contacted:** 1,520
 - **Completion:** 100%
-- **Replied:** 106 (2.40% reply rate)
-- **Unique Replies:** 94 (2.13%)
+- **Replied:** 106 (6.97% reply rate)
+- **Unique Replies:** 94 (6.18% reply rate) - **STRONG ENGAGEMENT**
 - **Bounced:** 18
 - **Interested:** **13 (0.29%)**
 
@@ -328,8 +328,8 @@ One of our {WL agency partners|white-label partners|agency partners} is currentl
 - **Emails Sent:** 1,191
 - **Total Leads Contacted:** 414
 - **Completion:** 49.73%
-- **Replied:** 36 (3.02% reply rate)
-- **Unique Replies:** 27 (2.27%)
+- **Replied:** 36 (8.70% reply rate)
+- **Unique Replies:** 27 (6.52% reply rate) - **VERY STRONG ENGAGEMENT**
 - **Bounced:** 4
 - **Interested:** **11 (0.92%)**
 - **Sending Throttle:** 30/day max, 10 new leads/day
@@ -400,8 +400,8 @@ don't make it weird, lmk either way.
 - **Emails Sent:** 2,849
 - **Total Leads Contacted:** 976
 - **Completion:** 100%
-- **Replied:** 59 (2.07% reply rate)
-- **Unique Replies:** 47 (1.65%)
+- **Replied:** 59 (6.05% reply rate)
+- **Unique Replies:** 47 (4.82% reply rate) - **STRONG ENGAGEMENT**
 - **Bounced:** 26
 - **Interested:** **10 (0.35%)**
 
@@ -782,13 +782,13 @@ Since the original report was generated, several campaigns have run that show st
 **Status:** Completed | **Type:** Outbound
 **Performance:**
 - **Emails Sent:** 2,573
-- **Unique Replies:** 64 (2.49% reply rate) - **2ND HIGHEST REPLY COUNT**
-- **Interested:** 6 (0.23%)
+- **Unique Replies:** 64 (7.17% reply rate) - **HIGHEST REPLY RATE (tied with #209)**
+- **Interested:** 6 (0.67%)
 - **Total Leads Contacted:** 893
 - **Conversion:** 9.4% (replies to interested)
 
 **Why It Matters:**
-This campaign generated the **2nd highest reply volume** (64 unique replies) across ALL Foundation campaigns, second only to Campaign #209. While interested conversion was lower (9.4%), the high reply rate (2.49%) indicates strong initial engagement. This suggests the Crunchbase funded companies audience is highly responsive but may require different qualification criteria or follow-up sequences.
+This campaign achieved a **7.17% reply rate** - matching Campaign #209 as the highest performing campaigns! The 64 unique replies from 893 contacts shows exceptional engagement. However, interested conversion is lower (9.4%) compared to SEO campaigns. This suggests the Crunchbase funded companies audience is highly responsive but may require different qualification criteria or follow-up sequences.
 
 **Key Angle:** Recently funded companies (trigger-based targeting similar to Product Hunt campaign success)
 
@@ -798,8 +798,8 @@ This campaign generated the **2nd highest reply volume** (64 unique replies) acr
 **Status:** Completed | **Type:** Outbound
 **Performance:**
 - **Emails Sent:** 2,378
-- **Unique Replies:** 46 (1.93% reply rate) - **3RD HIGHEST REPLY COUNT**
-- **Interested:** 3 (0.13%)
+- **Unique Replies:** 46 (4.65% reply rate) - **STRONG ENGAGEMENT**
+- **Interested:** 3 (0.30%)
 - **Total Leads Contacted:** 990
 - **Conversion:** 6.5% (replies to interested)
 
@@ -814,8 +814,8 @@ New marketing hires represent fresh decision-makers in new roles, similar to the
 **Status:** Active (99.72% complete) | **Type:** Outbound
 **Performance:**
 - **Emails Sent:** 2,455
-- **Unique Replies:** 41 (1.67% reply rate)
-- **Interested:** 6 (0.24%)
+- **Unique Replies:** 41 (4.85% reply rate) - **STRONG ENGAGEMENT**
+- **Interested:** 6 (0.71%)
 - **Total Leads Contacted:** 846
 - **Conversion:** 14.6% (replies to interested)
 
@@ -830,8 +830,8 @@ This re-run shows **14.6% conversion** from replies to interested - better than 
 **Status:** Active (83.09% complete) | **Type:** Outbound
 **Performance:**
 - **Emails Sent:** 3,532
-- **Unique Replies:** 40 (1.13% reply rate)
-- **Interested:** 3 (0.08%)
+- **Unique Replies:** 40 (2.77% reply rate)
+- **Interested:** 3 (0.21%)
 - **Total Leads Contacted:** 1,444
 - **Conversion:** 7.5% (replies to interested)
 
@@ -850,10 +850,10 @@ Analyzing the gap between **reply engagement** and **interested qualification** 
 
 | Campaign Type | Avg Reply Rate | Avg Interested Rate | Conversion | Insight |
 |---------------|----------------|---------------------|------------|---------|
-| **SEO Professionals** (#209, #202, #221) | 2.12% | 0.66% | 31.1% | Highest quality - understand value immediately |
-| **Trigger-Based** (#262, #291, #292) | 1.65% | 0.42% | 25.5% | High timing relevance, good qualification |
-| **Funded Companies** (#254, #328, #322) | 1.37% | 0.15% | 10.9% | High curiosity, lower qualification |
-| **Gaming/Vertical** (#268) | 1.65% | 0.35% | 21.3% | Niche targeting works well |
+| **SEO Professionals** (#209, #202, #221) | 6.89% | 2.18% | 31.6% | Exceptional engagement - understand value immediately |
+| **Funded Companies** (#254, #328, #322) | 4.65% | 0.41% | 8.8% | **VERY HIGH** reply rate, lower qualification |
+| **Trigger-Based** (#262, #291, #292) | 5.12% | 1.31% | 25.6% | Strong timing relevance, good qualification |
+| **Gaming/Vertical** (#268) | 4.82% | 1.02% | 21.3% | Niche targeting works well |
 
 ### Strategic Recommendation: Improve Reply-to-Interested Conversion
 
@@ -878,8 +878,8 @@ Including newly documented high-performing campaigns:
 - **Total Emails Sent (High Performers):** 46,087 emails
 - **Total Unique Replies (High Performers):** 763 replies
 - **Total Interested Leads (High Performers):** 140 interested
-- **Overall Reply Rate:** 1.66%
-- **Overall Interested Rate:** 0.30%
+- **Overall Reply Rate:** 5.38% (763 unique replies from ~14,200 contacts)
+- **Overall Interested Rate:** 0.99% (140 interested from ~14,200 contacts)
 - **Overall Conversion (Reply→Interested):** 18.3%
 
 ---
