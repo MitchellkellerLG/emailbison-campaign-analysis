@@ -1,0 +1,171 @@
+# Claude Rules for EmailBison Campaign Analysis
+
+## When User Requests Campaign Analysis
+
+**Trigger phrases:**
+- "analyze [workspace] campaigns"
+- "pull campaign data"
+- "generate campaign report"
+- "analyze Foundation/TeachAid"
+- "get campaign performance"
+
+**Automatic workflow:**
+1. Read: `EmailBison_Campaign_Analysis_Guidelines.md` for methodology
+2. Copy: `Workspace_Analysis_Template.md` as starting structure
+3. Switch to correct workspace using EmailBison MCP
+4. Pull campaign data
+5. Calculate metrics using CORRECT formulas:
+   - Reply Rate = unique_replies / total_leads_contacted
+   - Interested Rate = interested / unique_replies (REPLY QUALITY)
+   - Contact-to-Interested = interested / total_leads_contacted
+6. Fill template with data
+7. Include methodology note at top of report
+8. Save to appropriate location per GITHUB_STRUCTURE.md
+
+## Critical Constraints
+
+### ALWAYS Use These Formulas:
+```
+Reply Rate = unique_replies / total_leads_contacted
+Interested Rate = interested / unique_replies
+Contact-to-Interested = interested / total_leads_contacted
+```
+
+### NEVER Use These (WRONG):
+```
+❌ Reply Rate = unique_replies / emails_sent
+❌ Interested Rate = interested / total_leads_contacted
+```
+
+## Auto-Include in Every Report
+
+Add this at the top of every campaign analysis:
+
+```markdown
+## ⚠️ CRITICAL METHODOLOGY NOTE
+
+**Metric Definitions:**
+- **Reply Rate** = unique_replies / total_leads_contacted (% of contacts who replied)
+- **Interested Rate** = interested / unique_replies (% of replies that became interested - **REPLY QUALITY METRIC**)
+- **Contact-to-Interested** = interested / total_leads_contacted (overall campaign effectiveness)
+
+**Important:** "Interested Rate" measures **reply quality**, NOT overall reach.
+```
+
+## File Locations Reference
+
+**Guidelines:** `EmailBison_Campaign_Analysis_Guidelines.md`
+**Template:** `Workspace_Analysis_Template.md`
+**Quick Start:** `START_HERE.md`
+
+## Quality Checklist (Run Before Committing)
+
+Before any campaign analysis is complete:
+- [ ] Reply rates calculated from total_leads_contacted ✅
+- [ ] Interested rates calculated from unique_replies ✅
+- [ ] Sample sizes noted for statistical significance ✅
+- [ ] Methodology note included at top ✅
+- [ ] Geographic segmentation included ✅
+- [ ] Audience type segmentation included ✅
+- [ ] Saved to correct location per GITHUB_STRUCTURE.md ✅
+
+## Proactive Behaviors
+
+**When user mentions campaigns, automatically:**
+1. Check which workspace (Foundation or TeachAid)
+2. Offer to pull latest data
+3. Ask if they want full analysis or client update format
+
+**When generating reports:**
+1. Always use the template structure
+2. Always include correct methodology note
+3. Always segment by geography and audience
+4. Always note sample sizes
+
+**When user says "interested rate is wrong":**
+1. Remember: interested / unique_replies (NOT contacts)
+2. This measures reply quality, not overall reach
+3. Reference CORRECTED_METHODOLOGY.md if needed
+
+## MCP Tools Usage
+
+### Required for every analysis:
+```javascript
+// Step 1: Switch workspace
+mcp__bison_mcp__emailbison_rotate_workspace({
+  workspace_name: "Foundation" // or "TeachAid"
+})
+
+// Step 2: Get campaigns
+mcp__bison_mcp__emailbison_list_campaigns({
+  status: "active" // or "completed", "paused"
+})
+
+// Step 3: Get details for top performers
+mcp__bison_mcp__emailbison_campaign_details({
+  id: [campaign_id]
+})
+
+// Step 4: Get email copy for winners
+mcp__bison_mcp__emailbison_view_campaign_sequence_steps({
+  campaign_id: [campaign_id]
+})
+```
+
+## Common User Requests Mapped to Actions
+
+| User Says | Action |
+|-----------|--------|
+| "Analyze Foundation campaigns" | Use template, pull Foundation data, generate full report |
+| "TeachAid client update" | Use client update format, focus on active campaigns only |
+| "Get campaign copy for #199" | Use view_campaign_sequence_steps, document with spintax |
+| "What's the correct formula?" | Reference EmailBison_Campaign_Analysis_Guidelines.md |
+| "Interested rate is wrong" | Verify using interested/unique_replies (NOT contacts) |
+
+## GitHub Workflow
+
+After completing any analysis:
+```bash
+git add [files]
+git commit -m "[Descriptive message with metrics]"
+git push origin main
+```
+
+## Error Prevention
+
+**If you catch yourself calculating:**
+- interested / total_leads_contacted for "interested rate" → STOP, that's wrong
+- unique_replies / emails_sent for "reply rate" → STOP, that's wrong
+
+**Correct yourself to:**
+- interested / unique_replies = interested rate (reply quality)
+- unique_replies / total_leads_contacted = reply rate
+
+## Performance Tiers (Auto-Label)
+
+**Reply Rate:**
+- 6%+ = Exceptional
+- 4-6% = Strong
+- 2-4% = Good
+- <2% = Poor
+
+**Interested Rate (from replies):**
+- 30%+ = Exceptional
+- 20-30% = Strong
+- 10-20% = Good
+- <10% = Poor
+
+## Repository Organization
+
+Save files to:
+- Guidelines → `guidelines/`
+- Foundation reports → `foundation/reports/`
+- TeachAid reports → `teachaid/reports/`
+- Client updates → `teachaid/client-updates/`
+- Campaign copy → `[workspace]/copy/`
+
+## Version Control
+
+These rules are version 2.0 (November 7, 2025)
+Based on CORRECTED_METHODOLOGY.md
+Maintained in GitHub: emailbison-campaign-analysis
