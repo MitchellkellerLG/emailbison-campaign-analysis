@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp list:*)",
+      "Read(//c/Users/mitch/Desktop/**)",
+      "Bash(git clone:*)",
+      "Bash(tree:*)",
+      "Read(//c/Users/mitch/Downloads/code/**)",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp show github)",
+      "Bash(cat:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(echo \"claude mcp add --transport http github https://api.githubcopilot.com/mcp -H \"\"Authorization: Bearer YOUR_GITHUB_TOKEN\"\"\")",
+      "Bash(git pull:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

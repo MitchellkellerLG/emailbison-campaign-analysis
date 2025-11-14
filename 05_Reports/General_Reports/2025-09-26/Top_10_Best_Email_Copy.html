@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Top 10 Best-Performing Email Copy Across All Workspaces</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f9fafb;
+        }
+        h1 {
+            color: #1a1a1a;
+            font-size: 32pt;
+            text-align: center;
+            margin-bottom: 10pt;
+            font-weight: 700;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 14pt;
+            margin-bottom: 40px;
+        }
+        .email-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .email-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+        .rank {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 18pt;
+            margin-right: 15px;
+            float: left;
+        }
+        .company-name {
+            color: #4f46e5;
+            font-size: 16pt;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .campaign-name {
+            color: #6b7280;
+            font-size: 11pt;
+            margin-bottom: 15px;
+        }
+        .metrics {
+            background: #f3f4f6;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .metric {
+            text-align: center;
+            flex: 1;
+        }
+        .metric-value {
+            font-size: 24pt;
+            font-weight: 700;
+            color: #059669;
+        }
+        .metric-label {
+            font-size: 10pt;
+            color: #6b7280;
+            text-transform: uppercase;
+        }
+        .subject-line {
+            background: #eef2ff;
+            border-left: 4px solid #4f46e5;
+            padding: 12px 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12pt;
+            font-weight: 600;
+        }
+        .email-body {
+            background: #fafafa;
+            border: 1px dashed #d1d5db;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 11pt;
+            line-height: 1.8;
+        }
+        .spintax {
+            color: #7c3aed;
+            font-weight: 600;
+        }
+        .variable {
+            color: #dc2626;
+            font-weight: 600;
+        }
+        .insights {
+            background: #fef3c7;
+            border: 1px solid #fbbf24;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .insights h4 {
+            color: #92400e;
+            margin-top: 0;
+            font-size: 12pt;
+        }
+        .insights ul {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+        .insights li {
+            margin: 5px 0;
+            color: #78350f;
+        }
+        .split-test {
+            background: #e0e7ff;
+            border: 1px solid #a5b4fc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .split-test h4 {
+            color: #312e81;
+            margin-top: 0;
+            font-size: 11pt;
+        }
+        .summary-section {
+            background: white;
+            border: 2px solid #4f46e5;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        .summary-section h2 {
+            color: #4f46e5;
+            margin-top: 0;
+        }
+        .pattern-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .pattern-box {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .pattern-box h4 {
+            color: #4f46e5;
+            margin-top: 0;
+        }
+        .gold {
+            color: #fbbf24;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        .silver {
+            color: #9ca3af;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        .bronze {
+            color: #92400e;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>🏆 Top 10 Best-Performing Email Copy</h1>
+    <p class="subtitle">Extracted from Email Bison workspaces • Maximum 2 per client • Ranked by Reply Rate</p>
+
+    <!-- #1 - Coherence -->
+    <div class="email-card">
+        <div class="rank gold">1</div>
+        <div class="company-name">Coherence</div>
+        <div class="campaign-name">Campaign: Coherence develop 2025 Brighton original attendees</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">33.33%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">32</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">96</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">20</div>
+                <div class="metric-label">Interested</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: attending develop brighton</div>
+        
+        <div class="email-body">
+            <span class="spintax">{Hey|Hi|Hello}</span> <span class="variable">{FIRST_NAME}</span> - <span class="variable">{HOOK}</span><br><br>
+            ggwp:)<br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span>
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>Ultra-minimalist approach</strong> - Only 2 lines of actual content</li>
+                <li><strong>Event-specific targeting</strong> - Brighton conference attendees</li>
+                <li><strong>Gaming slang</strong> - "ggwp" (good game, well played) shows insider knowledge</li>
+                <li><strong>Personalized hook variable</strong> - Custom message per recipient</li>
+                <li><strong>No pitch in first email</strong> - Pure relationship building</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- #2 - Coherence -->
+    <div class="email-card">
+        <div class="rank silver">2</div>
+        <div class="company-name">Coherence</div>
+        <div class="campaign-name">Campaign: Gamescom event attendees</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">19.64%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">22</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">112</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">9</div>
+                <div class="metric-label">Interested</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: attending gamescom</div>
+        
+        <div class="email-body">
+            <span class="spintax">{Hey|Hi|Hello}</span> <span class="variable">{FIRST_NAME}</span> - doing any interresting work on <span class="variable">{HOOK}</span> atm?<br><br>
+            We're gonna be at gamescom, would love to hear about your plans over a quick coffee if you're up for it.<br><br>
+            Can make it worthwhile by sharing our experience of converting Vampire Survivors to multiplayer.<br><br>
+            lmk either way,<br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span>
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>Intentional typo</strong> - "interresting" makes it feel human</li>
+                <li><strong>Casual language</strong> - "gonna be", "atm", "lmk"</li>
+                <li><strong>Value exchange offer</strong> - Vampire Survivors case study</li>
+                <li><strong>Low commitment ask</strong> - Just coffee at the event</li>
+                <li><strong>Name-dropping success</strong> - Popular game conversion story</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- #3 - Golden Dune -->
+    <div class="email-card">
+        <div class="rank bronze">3</div>
+        <div class="company-name">Golden Dune</div>
+        <div class="campaign-name">Campaign: Lookalikes Community Biz</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">10.26%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">120</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">1,170</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">20</div>
+                <div class="metric-label">Interested</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: paid trip</div>
+        
+        <div class="email-body">
+            Hey <span class="variable">{FIRST_NAME}</span> we're partnering with <span class="variable">{PL1}</span> owners to go on a trip with their community that pays them 10-25k. All we do is send 3 emails to your community to see if there's interest to start. (we're only paid when you are)<br><br>
+            <span class="spintax">{curious to hear your opinion on this|Lmk your thoughts on this, would love to hear}</span>:)<br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span><br><br>
+            P.S. Jake from Irrational Optimism (a community) has made over 25k from 2 trips with his community.
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>Shocking subject line</strong> - "paid trip" is intriguing</li>
+                <li><strong>Clear value proposition</strong> - $10-25k potential</li>
+                <li><strong>Risk reversal</strong> - "we're only paid when you are"</li>
+                <li><strong>Social proof in P.S.</strong> - Specific person and earnings</li>
+                <li><strong>Low barrier to entry</strong> - Just 3 emails to test</li>
+            </ul>
+        </div>
+
+        <div class="split-test">
+            <h4>🔬 Split Test Variant:</h4>
+            <p><strong>Subject:</strong> paid trip<br>
+            <strong>Body:</strong> Hello {FIRST_NAME} - we partner with {PL1} to help them make 10-25k from hosting destination masterminds with their community. (like getting paid to teach on a beach) hahaha:)<br><br>
+            Open to hearing a bit more? (oh and it's performance-based)</p>
+        </div>
+    </div>
+
+    <!-- #4 - Launch Club -->
+    <div class="email-card">
+        <div class="rank">4</div>
+        <div class="company-name">Launch Club</div>
+        <div class="campaign-name">Campaign: Reddit Engagers - SEO 8-500 emp Aug 12th</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">9.52%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">55</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">578</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">11</div>
+                <div class="metric-label">Interested</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: weird one</div>
+        
+        <div class="email-body">
+            Hey <span class="variable">{FIRST_NAME}</span> - <span class="spintax">{Are you still doing work with|Do you still work with|Are you still partnering with|Do you still take on clients like|Are you still collaborating with}</span> businesses like <span class="variable">{CASE_STUDY}</span>?<br><br>
+            If so, <span class="spintax">{I might have|I think I might have|Could have|Possibly have|I may have}</span> a <span class="spintax">{weird|different|unusual|unique|out-of-the-box|}</span> <span class="spintax">{partnership opportunity|collaboration idea|partnership idea|opportunity|collab idea}</span>.<br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span>
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>"Weird one" pattern</strong> - Creates curiosity</li>
+                <li><strong>Heavy Spintax usage</strong> - 20+ variations per email</li>
+                <li><strong>Qualification question</strong> - "still doing work with..."</li>
+                <li><strong>Vague value prop</strong> - Forces curiosity response</li>
+                <li><strong>Case study personalization</strong> - Shows research</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- #5 - JVDB Studios -->
+    <div class="email-card">
+        <div class="rank">5</div>
+        <div class="company-name">JVDB Studios</div>
+        <div class="campaign-name">Campaign: JVDB High Youth Appeal</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">8.66%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">20</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">231</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: <span class="spintax">{views|eyeballs}</span></div>
+        
+        <div class="email-body">
+            Hey <span class="variable">{FIRST_NAME}</span> - quick q, are you looking to get more <span class="spintax">{views|eyeballs}</span> on <span class="variable">{HOOK}</span>?<br><br>
+            If so, we've been getting <span class="spintax">{insane|crazy|wild|ridiculous}</span> results for games like Marvel Snap (2M+ views).<br><br>
+            <span class="spintax">{Interested in hearing more?|Want to hear how?|Should I share more details?}</span><br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span>
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>One-word subject variations</strong> - "views" or "eyeballs"</li>
+                <li><strong>Direct value question</strong> - Are you looking for X?</li>
+                <li><strong>Massive social proof</strong> - 2M+ views for Marvel Snap</li>
+                <li><strong>Youth-focused language</strong> - "insane", "crazy"</li>
+                <li><strong>Simple yes/no close</strong> - Easy to respond</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- #6 - Foundation -->
+    <div class="email-card">
+        <div class="rank">6</div>
+        <div class="company-name">Foundation</div>
+        <div class="campaign-name">Campaign: Foundation Ecom Test 1</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">8.67%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">112</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">1,292</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: <span class="spintax">{question about trolls|tired of trolls?|reddit question|seen this?}</span></div>
+        
+        <div class="email-body">
+            Hey <span class="variable">{FIRST_NAME}</span> - quick question about <span class="variable">{COMPANY}</span>...<br><br>
+            Are you dealing with trolls on Reddit? <span class="spintax">{We found a way to|We've discovered how to|Found a method to}</span> turn those same trolls into <span class="spintax">{buyers|customers|brand advocates}</span>.<br><br>
+            <span class="spintax">{Worth a quick chat?|Interested?|Want details?}</span><br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span>
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>Pain point subject lines</strong> - Trolls are a real problem</li>
+                <li><strong>Transformation promise</strong> - Trolls → buyers</li>
+                <li><strong>Company personalization</strong> - Shows research</li>
+                <li><strong>Contrarian angle</strong> - Turn negatives into positives</li>
+                <li><strong>Brief and punchy</strong> - Under 50 words</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- #7 - Estruxture -->
+    <div class="email-card">
+        <div class="rank">7</div>
+        <div class="company-name">Estruxture</div>
+        <div class="campaign-name">Campaign: Cloud_Providers_with_AI_GPU_bandwidth_in_CA</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">7.94%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">16</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">214</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">1</div>
+                <div class="metric-label">Interested</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: AI compute bandwidth</div>
+        
+        <div class="email-body">
+            <span class="spintax">{Hey|Hello}</span> <span class="variable">{FIRST_NAME}</span>, weird one for ya - <span class="spintax">{any plans to scale your AI compute bandwidth for customers {at the moment|right now|soon}|are you planning to scale your AI compute for customers {soon|in the near term}|are you thinking about adding more AI compute capacity for customers {right now|this quarter}|are you looking to expand your AI compute capacity for customers {at all|in the near term}}</span>?<br><br>
+            We currently have some high-density gpu space available.<br><br>
+            <span class="spintax">{Want me to send over our availability?|Want me to send over what's open?|Want me to send the current availability?}</span><br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span>
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>Technical subject</strong> - "AI compute bandwidth"</li>
+                <li><strong>"Weird one for ya"</strong> - Pattern interrupt opener</li>
+                <li><strong>Complex Spintax</strong> - Nested variations for freshness</li>
+                <li><strong>Scarcity hint</strong> - "space available"</li>
+                <li><strong>Simple ask</strong> - Just send availability</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- #8 - ContentGrow -->
+    <div class="email-card">
+        <div class="rank">8</div>
+        <div class="company-name">ContentGrow</div>
+        <div class="campaign-name">Campaign: Automated SteamDB Developers</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">7.84%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">33</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">421</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: <span class="spintax">{launch fuel|bluelight protected eyeballs}</span></div>
+        
+        <div class="email-body">
+            Hey <span class="variable">{FIRST_NAME}</span> - launching <span class="variable">{HOOK}</span> soon?<br><br>
+            <span class="spintax">{We helped|Just helped|Recently helped}</span> Octo get 2.1M views & 53,000 shares on their launch content.<br><br>
+            <span class="spintax">{Want to see how?|Interested in the strategy?|Should I share what we did?}</span><br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span>
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>Creative subject lines</strong> - "bluelight protected eyeballs"</li>
+                <li><strong>Timing relevance</strong> - "launching soon?"</li>
+                <li><strong>Massive metrics</strong> - 2.1M views, 53k shares</li>
+                <li><strong>Recent success</strong> - "Just helped"</li>
+                <li><strong>Game developer language</strong> - Industry specific</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- #9 - Launch Club -->
+    <div class="email-card">
+        <div class="rank">9</div>
+        <div class="company-name">Launch Club</div>
+        <div class="campaign-name">Campaign: Reddit Engagers - Non SEO Agencies</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">7.29%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">125</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">1,715</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">43</div>
+                <div class="metric-label">Interested</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: reddit's hidden value</div>
+        
+        <div class="email-body">
+            Hey <span class="variable">{FIRST_NAME}</span> - noticed <span class="variable">{COMPANY}</span> works with <span class="variable">{CASE_STUDY}</span>-type clients.<br><br>
+            <span class="spintax">{Ever considered|Have you thought about|Would you consider}</span> Reddit as a traffic source for them? Most agencies miss that Reddit traffic now feeds directly into AI/LLM responses.<br><br>
+            <span class="spintax">{Want a free Reddit opportunity report for {CASE_STUDY}?|Should I create a Reddit audit for {CASE_STUDY}?|Interested in seeing Reddit potential for {CASE_STUDY}?}</span><br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span>
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>Educational angle</strong> - "Reddit feeds AI/LLM"</li>
+                <li><strong>Free value offer</strong> - Opportunity report</li>
+                <li><strong>Client-specific</strong> - Uses their case study</li>
+                <li><strong>Market insight</strong> - "Most agencies miss..."</li>
+                <li><strong>Future-focused</strong> - AI/LLM angle is timely</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- #10 - LeadGrow -->
+    <div class="email-card">
+        <div class="rank">10</div>
+        <div class="company-name">LeadGrow</div>
+        <div class="campaign-name">Campaign: Trigify Intent-based leads</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">5.93%</div>
+                <div class="metric-label">Reply Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">136</div>
+                <div class="metric-label">Unique Replies</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">2,294</div>
+                <div class="metric-label">Contacts</div>
+            </div>
+        </div>
+
+        <div class="subject-line">Subject: <span class="spintax">{restraining orders|they want you}</span></div>
+        
+        <div class="email-body">
+            <span class="variable">{FIRST_NAME}</span> - <span class="spintax">{weird analogy|strange comparison|odd thought}</span> but...<br><br>
+            You know how restraining orders work? Someone shows clear intent they want to be near you (just... not in a good way lol)<br><br>
+            Well, we found the business equivalent - people showing clear intent they want your solution. <span class="spintax">{Just helped|Recently helped}</span> a client book 40+ meetings and close $100k+ deals using these intent signals.<br><br>
+            <span class="spintax">{Worth exploring?|Curious?|Want details?}</span><br><br>
+            <span class="variable">{SENDER_EMAIL_SIGNATURE}</span>
+        </div>
+
+        <div class="insights">
+            <h4>💡 Why This Works:</h4>
+            <ul>
+                <li><strong>Shocking subject lines</strong> - "restraining orders"</li>
+                <li><strong>Memorable analogy</strong> - Restraining order comparison</li>
+                <li><strong>Humor element</strong> - "not in a good way lol"</li>
+                <li><strong>Specific results</strong> - 40+ meetings, $100k+ deals</li>
+                <li><strong>Intent-based messaging</strong> - Hot topic in sales</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary-section">
+        <h2>🔍 Key Patterns & Insights</h2>
+        
+        <div class="pattern-grid">
+            <div class="pattern-box">
+                <h4>Subject Line Patterns</h4>
+                <ul>
+                    <li><strong>Ultra-short:</strong> 1-3 words maximum</li>
+                    <li><strong>Lowercase:</strong> More casual, higher open rates</li>
+                    <li><strong>Questions:</strong> "tired of trolls?"</li>
+                    <li><strong>Intrigue:</strong> "weird one", "paid trip"</li>
+                    <li><strong>Direct value:</strong> "views", "eyeballs"</li>
+                </ul>
+            </div>
+            
+            <div class="pattern-box">
+                <h4>Opening Lines That Win</h4>
+                <ul>
+                    <li><strong>"Weird one for ya"</strong> - Pattern interrupt</li>
+                    <li><strong>Direct questions</strong> - "doing any interesting work on X?"</li>
+                    <li><strong>Event references</strong> - "attending [conference]"</li>
+                    <li><strong>Pain points</strong> - "dealing with trolls?"</li>
+                    <li><strong>Qualification</strong> - "still working with..."</li>
+                </ul>
+            </div>
+            
+            <div class="pattern-box">
+                <h4>Body Copy Elements</h4>
+                <ul>
+                    <li><strong>Under 75 words</strong> ideal length</li>
+                    <li><strong>Heavy Spintax</strong> - 5+ variations per variable</li>
+                    <li><strong>Casual tone</strong> - "gonna", "lmk", "atm"</li>
+                    <li><strong>Specific metrics</strong> - "2.1M views", "$100k deals"</li>
+                    <li><strong>Low commitment CTAs</strong> - "Worth a chat?"</li>
+                </ul>
+            </div>
+            
+            <div class="pattern-box">
+                <h4>Psychological Triggers</h4>
+                <ul>
+                    <li><strong>Social proof</strong> - Name specific clients/results</li>
+                    <li><strong>FOMO</strong> - "space available", "at the event"</li>
+                    <li><strong>Risk reversal</strong> - "only paid when you are"</li>
+                    <li><strong>Curiosity gaps</strong> - Vague but intriguing</li>
+                    <li><strong>Pattern interrupts</strong> - Unexpected analogies</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>📊 Performance Insights</h3>
+        <ul>
+            <li><strong>Event-based campaigns</strong> dominate with 20-33% reply rates</li>
+            <li><strong>Technical audiences</strong> respond to technical language (AI, GPU, bandwidth)</li>
+            <li><strong>Gaming industry</strong> emails use gaming slang and culture references</li>
+            <li><strong>Agency campaigns</strong> focus on client results and white-label opportunities</li>
+            <li><strong>Community owners</strong> respond to monetization without work promises</li>
+        </ul>
+
+        <h3>🚀 Implementation Tips</h3>
+        <ol>
+            <li><strong>Keep subject lines under 3 words</strong> - Shorter consistently performs better</li>
+            <li><strong>Use the "weird one" opener</strong> - It's proven across multiple industries</li>
+            <li><strong>Personalize with research</strong> - Reference their work, clients, or interests</li>
+            <li><strong>Lead with intrigue, not pitch</strong> - Save the value prop for email 2</li>
+            <li><strong>Test heavily with Spintax</strong> - Top performers use 20+ variations</li>
+            <li><strong>Keep first emails under 75 words</strong> - Brevity drives responses</li>
+            <li><strong>Use casual language</strong> - Write like you text</li>
+            <li><strong>Include specific success metrics</strong> - But save details for follow-ups</li>
+        </ol>
+    </div>
+
+    <div style="text-align: center; margin-top: 50px; padding: 20px; background: #f3f4f6; border-radius: 12px;">
+        <p style="color: #6b7280; font-size: 10pt;">
+            📧 Compiled from Email Bison workspace data<br>
+            Analysis based on actual campaign performance metrics<br>
+            Top performers selected from 100+ campaigns across 14 workspaces
+        </p>
+    </div>
+</body>
+</html>

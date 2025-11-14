@@ -1,0 +1,23 @@
+SEARCH PLAN FOR INTERESTED LEADS IN CLEANLAB CAMPAIGNS
+=======================================================
+
+Target Campaigns:
+- Campaign 241: CleanLab Lending and Credit (NA/UK) - 1 interested lead
+- Campaign 193: Cleanlab Agentic / production AI news 19th August - 2 interested leads  
+- Campaign 188: Canada_ai_agents_customer_service_chatbots_last_3_6 months August 13th - 4 interested leads
+- Campaign 165: EverGreen Armand Ruiz Engagement July 31 - 5 interested leads
+
+Total Expected: 12 interested leads
+
+Search Strategy:
+1. The EmailBison API includes lead_campaign_data in the lead response
+2. Each lead has a lead_campaign_data array showing their status in each campaign
+3. We need to look for leads where:
+   - campaign_id matches one of our target campaigns (241, 193, 188, 165)
+   - interested field is true
+
+Next Steps:
+1. Paginate through all leads using the list_leads endpoint
+2. For each lead, check their lead_campaign_data
+3. If they are marked as interested in any of our target campaigns, record their details
+4. Focus on extracting the job title (from 'title' or 'notes' field)

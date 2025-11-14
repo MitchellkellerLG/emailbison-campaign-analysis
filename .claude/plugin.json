@@ -1,0 +1,106 @@
+{
+  "name": "meeting-content-generator",
+  "version": "2.0.0",
+  "description": "Transforms Fireflies meeting transcripts into publish-ready social media content with voice fidelity and client anonymization. Context-first architecture preserves quality.",
+  "author": "Mitchell Keller / LeadGrow",
+  "main": "README.md",
+  "configuration": {
+    "privateContentPath": "c:\\Users\\mitch\\Desktop\\Claude Code Projects\\content\\private",
+    "publicContentPath": "c:\\Users\\mitch\\Desktop\\Claude Code Projects\\content\\public",
+    "librariesPath": "c:\\Users\\mitch\\Desktop\\Claude Code Projects\\content\\libraries",
+    "modelPreference": "sonnet",
+    "qualityThreshold": 8,
+    "weeklyTargets": {
+      "shortform": 48,
+      "longform": 8
+    },
+    "security": {
+      "privateDirectories": [
+        "content/private"
+      ],
+      "publicDirectories": [
+        "content/public"
+      ]
+    }
+  },
+  "agents": [
+    {
+      "name": "transcript-extractor",
+      "file": "agents/transcript-extractor.md",
+      "description": "Extracts raw transcripts from Fireflies with full client context"
+    },
+    {
+      "name": "content-ideator",
+      "file": "agents/content-ideator.md",
+      "description": "Identifies content opportunities from raw transcripts using real client names"
+    },
+    {
+      "name": "data-enricher",
+      "file": "agents/data-enricher.md",
+      "description": "Pulls campaign performance data from EmailBison and Airtable"
+    },
+    {
+      "name": "content-writer",
+      "file": "agents/content-writer.md",
+      "description": "Drafts posts with full context for accuracy and voice fidelity"
+    },
+    {
+      "name": "content-anonymizer",
+      "file": "agents/content-anonymizer.md",
+      "description": "Systematically anonymizes client-identifying information before publication"
+    },
+    {
+      "name": "content-editor",
+      "file": "agents/content-editor.md",
+      "description": "Scores posts, verifies anonymization, publishes 8+ to Typefully"
+    }
+  ],
+  "skills": [
+    {
+      "name": "transcript-tracker",
+      "file": "skills/transcript-tracker.md",
+      "description": "Prevents duplicate transcript processing with state management"
+    }
+  ],
+  "commands": [
+    {
+      "name": "generate-content",
+      "file": "commands/generate-content.md",
+      "description": "Orchestrates full pipeline from transcripts to Typefully drafts",
+      "usage": "/generate-content [date-range]"
+    },
+    {
+      "name": "analyze-campaigns",
+      "file": "commands/analyze-campaigns.md",
+      "description": "Pulls campaign performance data for authority statement enrichment",
+      "usage": "/analyze-campaigns [client-name]"
+    }
+  ],
+  "libraries": [
+    {
+      "name": "brand-voice",
+      "file": "content/libraries/brand-voice.md",
+      "description": "Mitchell's authentic voice patterns, tone, and style"
+    },
+    {
+      "name": "post-type-criteria",
+      "file": "content/libraries/post-type-criteria.md",
+      "description": "Success criteria and examples for all 8 post types"
+    },
+    {
+      "name": "successful-patterns",
+      "file": "content/libraries/successful-patterns.md",
+      "description": "Proven content patterns from Christian Placencia analysis"
+    },
+    {
+      "name": "service-offering-map",
+      "file": "content/libraries/service-offering-map.md",
+      "description": "LeadGrow services with 80% tactical detail for content creation"
+    }
+  ],
+  "mcpIntegrations": [
+    "mcp__fireflies",
+    "mcp__bison_mcp",
+    "mcp__pipedream-typefully"
+  ]
+}

@@ -1,0 +1,279 @@
+# ========================================
+# LeadGrow Campaign Intelligence - .gitignore
+# Protects sensitive client data, API keys, and PII
+# ========================================
+
+# CRITICAL: NEVER commit these directories
+# ========================================
+
+# Client Private Data (contains real client names, PII)
+content/private/
+content/private/**
+
+# Lead Data and Exports (contains email addresses, contact info)
+06_Data/
+06_Data/**
+06_Dataexports
+06_Datapayloads/
+
+# Sensitive Configuration (API keys, credentials)
+**/api-keys.json
+**/credentials.json
+**/*-credentials.json
+**/secrets.json
+**/.env
+**/.env.local
+**/.env.*.local
+
+# MCP Configuration (may contain API keys)
+**/claude_desktop_config.json
+**/.claude/mcp-config.json
+
+# Archived Sensitive Data
+08_Archive/**/06_Data/
+08_Archive/**/content/private/
+
+# ========================================
+# Generated Files & Build Artifacts
+# ========================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.pyc
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ========================================
+# Document Formats (may contain sensitive info)
+# ========================================
+
+# Word Documents (often contain client details)
+*.docx
+*.doc
+
+# Excel Files (may contain lead lists)
+*.xlsx
+*.xls
+*.csv
+
+# PDF Files (may contain client reports)
+*.pdf
+
+# ========================================
+# Operating System Files
+# ========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+nul
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ========================================
+# IDE & Editor Files
+# ========================================
+
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+*~
+Session.vim
+.netrwhist
+
+# ========================================
+# Node.js / JavaScript (if used)
+# ========================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ========================================
+# Database Files
+# ========================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# ========================================
+# Log Files
+# ========================================
+
+*.log
+logs/
+*.log.[0-9]*
+
+# ========================================
+# Temporary Files
+# ========================================
+
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.cache
+
+# ========================================
+# Backup Files
+# ========================================
+
+*.backup
+*_backup
+backup/
+
+# ========================================
+# Package Management
+# ========================================
+
+# Python
+Pipfile.lock
+poetry.lock
+
+# ========================================
+# Project-Specific Exclusions
+# ========================================
+
+# Separate Projects (not part of this repo)
+08_Archive/separate-projects/
+
+# Old Archive Folders
+08_Archive2025-09-26/
+
+# Large Data Exports
+**/exports/*.json
+**/exports/*.csv
+**/payloads/*.json
+
+# ========================================
+# EXCEPTIONS: Always Include These
+# ========================================
+
+# Allow specific configuration examples (without secrets)
+!example.env
+!config.example.json
+
+# Allow README files everywhere
+!README.md
+!**/README.md
+
+# Allow documentation
+!*.md
+!docs/**/*.md
+
+# Allow MCP server documentation
+!MCP\ Servers/**/*.md
+!MCP\ Servers/**/README.md
+
+# Allow template files
+!**/templates/**
+!**/*-template.*
+
+# Allow .claude plugin system (no secrets here)
+!.claude/plugin.json
+!.claude/agents/**
+!.claude/skills/**
+!.claude/commands/**
+
+# Allow specific safe data files for examples
+!**/test-data/*.json
+!**/examples/*.csv
+
+# ========================================
+# Security Notes
+# ========================================
+
+# If you accidentally commit sensitive data:
+# 1. DO NOT just remove it in a new commit
+# 2. Use git filter-branch or BFG Repo-Cleaner
+# 3. Force push to rewrite history
+# 4. Rotate any exposed API keys immediately
+# 5. Notify Mitchell Keller
+
+# For more info: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+
+# ========================================
+# Maintenance
+# ========================================
+
+# Last updated: 2025-11-09
+# Maintained by: Mitchell Keller
+# Review frequency: Quarterly or when adding new sensitive data types

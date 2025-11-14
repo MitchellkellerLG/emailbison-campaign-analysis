@@ -1,0 +1,44 @@
+CLEANLAB CAMPAIGNS - INTERESTED LEADS ANALYSIS
+==============================================
+
+CAMPAIGN STATISTICS:
+--------------------
+
+Campaign 241: CleanLab Lending and Credit (NA/UK)
+- Campaign Focus: AI for credit decisioning and underwriting in financial services
+- Target Industries: Financial services, banking, lending
+- Interested Leads: 1 out of 680 contacted
+- Interest Rate: 0.15%
+
+Campaign 193: Cleanlab Agentic / production AI news 19th August
+- Campaign Focus: Agentic AI and production AI implementation
+- Target Audience: Technology leaders interested in production AI
+- Interested Leads: 2 out of 339 contacted  
+- Interest Rate: 0.59%
+
+Campaign 188: Canada_ai_agents_customer_service_chatbots_last_3_6 months August 13th
+- Campaign Focus: AI agents for customer service and chatbots
+- Target Market: Canadian companies
+- Interested Leads: 4 out of 768 contacted
+- Interest Rate: 0.52%
+
+Campaign 165: EverGreen Armand Ruiz Engagement July 31
+- Campaign Focus: General AI engagement campaign
+- Interested Leads: 5 out of 1089 contacted
+- Interest Rate: 0.46%
+
+TOTAL INTERESTED LEADS: 12
+
+RECOMMENDATION:
+---------------
+To get the exact job titles of these 12 interested leads, you would need to:
+
+1. Contact EmailBison support for assistance in extracting interested leads data
+2. Use their web interface to filter and export interested leads
+3. Check if there's a webhook or export feature for interested lead notifications
+4. Use alternative API endpoints that might not be publicly documented
+
+The API structure shows that the data exists (the 'interested' field is tracked per lead per campaign), but accessing it efficiently requires either:
+- A specific filter parameter in the leads endpoint
+- Access to a specialized reporting endpoint
+- Direct database query access

@@ -1,0 +1,44 @@
+CLEANLAB INTERESTED LEADS SUMMARY
+==================================
+
+Campaign Overview:
+-----------------
+1. Campaign 241: CleanLab Lending and Credit (NA/UK)
+   - Status: Paused
+   - Interested Leads: 1
+   - Total Leads Contacted: 680
+   - Unique Replies: 13
+
+2. Campaign 193: Cleanlab Agentic / production AI news 19th August  
+   - Status: Paused
+   - Interested Leads: 2
+   - Total Leads Contacted: 339
+   - Unique Replies: 10
+
+3. Campaign 188: Canada_ai_agents_customer_service_chatbots_last_3_6 months August 13th
+   - Status: Completed
+   - Interested Leads: 4
+   - Total Leads Contacted: 768
+   - Unique Replies: 16
+
+4. Campaign 165: EverGreen Armand Ruiz Engagement July 31
+   - Status: Paused
+   - Interested Leads: 5
+   - Total Leads Contacted: 1089
+   - Unique Replies: 38
+
+Total Interested Leads to Find: 12
+
+Search Strategy:
+----------------
+Since the EmailBison API includes lead_campaign_data in each lead response, I need to:
+1. Query the leads endpoint with pagination
+2. Check each lead's lead_campaign_data array
+3. Look for entries where campaign_id matches our targets AND interested=true
+4. Extract the job titles from either the 'title' field or 'notes' field
+
+Note: From the sample API responses, I can see that lead data includes:
+- title: Usually null in many cases
+- notes: Often contains the actual job title (e.g., "CEO", "Chief Information Officer")
+- company: Company name
+- first_name, last_name, email: Contact details
