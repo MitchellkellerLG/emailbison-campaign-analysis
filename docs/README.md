@@ -4,6 +4,11 @@ This directory contains wiki-style documentation and analysis reports organized 
 
 ## Structure
 
+### `/Boundless/`
+Campaign analysis and performance reports for Boundless (capital funding) email campaigns.
+
+- [Campaign Intelligence Analysis (Nov 28, 2025)](Boundless/Campaign_Intelligence_Analysis_Nov28_2025.md) - Full analysis of 11 campaigns with "Why Winners Work" pattern extraction and winning formula.
+
 ### `/TeachAid/`
 Campaign analysis and performance reports for TeachAid email campaigns.
 
